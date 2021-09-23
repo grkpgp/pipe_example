@@ -1,7 +1,7 @@
 pipeline {
     agent any
          stages {
-              stage ('BUILD") {
+              stage ('BUILD') {
              steps {
                  sh ' echo this is my first satgepipeline job'
                      sh 'ls-lrt'
@@ -9,9 +9,10 @@ pipeline {
       }
   
 stages {
-stage ('TEST") {
+stage ('TEST') {
 steps {
-sh '' echo this is my second satgepipeline job
+sh '' 
+echo this is my second satgepipeline job
            du-sh
     ''
 }
